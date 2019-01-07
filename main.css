@@ -1,0 +1,95 @@
+/* Global */
+
+body {
+    font: normal 15px sans-serif;
+}
+
+@media screen and (max-width: 703px) {
+    .responsive-title > h1,h4,p {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    #title-1{
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (min-width: 704px) {
+    .responsive-title > h1,h4,p {
+        display: inline;
+    }
+
+    #title-1 > h1{
+        font-size: 4em;
+    }
+
+    #title-2 > h4{
+        font-size: 2em;
+    }
+
+    #title-3 > p{
+        font-size: 1em;
+    }
+}
+
+#title-3{
+    margin-top: 16px;
+}
+
+/* Text */
+
+.white-text{
+    color: #fff;
+}
+
+.grey-text{
+    color: #999;
+}
+
+.blue-text{
+    color: #05f;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+/* Web Sections */
+
+#main{
+    position: relative;
+    top: 0;
+}
+
+#landing{
+    background-image: url(images/backgrounds/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 15%;
+}
+
+#about{
+
+}
+
+#projects{
+    
+}
+
+#highlights{
+    
+}
+
+#skills{
+    
+}
+
+#software{
+    
+}
+
+#contact{
+    
+}

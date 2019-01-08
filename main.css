@@ -1,50 +1,35 @@
-/* Global */
+/* global */
 
-body {
-    font: normal 15px sans-serif;
+body *{
+    font-family: sans-serif;
 }
 
-@media screen and (max-width: 703px) {
+@media screen and (max-width: 1199px) {
     .responsive-title > h1,h4,p {
-        display: block;
-        margin-bottom: 0;
+        display: inline-block;
     }
 
-    #title-1{
-        margin-bottom: 16px;
+    .responsive-title > h1 {
+        font-size: 3em;
+    }
+
+    .responsive-title > h4 {
+        font-size: 1.5em;
+    }
+
+    .responsive-title > p {
+        font-size: .75em;
     }
 }
 
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 1200px) {
     .responsive-title > h1,h4,p {
         display: inline;
     }
-
-    #title-1 > h1{
-        font-size: 4em;
-    }
-
-    #title-2 > h4{
-        font-size: 2em;
-    }
-
-    #title-3 > p{
-        font-size: 1em;
-    }
 }
-
-#title-3{
-    margin-top: 16px;
-}
-
-/* Text */
 
 .white-text{
     color: #fff;
-}
-
-.grey-text{
-    color: #999;
 }
 
 .blue-text{
@@ -55,41 +40,18 @@ body {
     font-weight: bold;
 }
 
-/* Web Sections */
+main{
 
-#main{
-    position: relative;
-    top: 0;
 }
 
 #landing{
-    background-image: url(images/backgrounds/background.jpg);
-    background-position: center;
+    background: url(images/backgrounds/background.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
-    padding-top: 15%;
 }
 
-#about{
-
-}
-
-#projects{
-    
-}
-
-#highlights{
-    
-}
-
-#skills{
-    
-}
-
-#software{
-    
-}
-
-#contact{
-    
+footer{
+    background-color: #232323;
+    color: #fff;
+    padding: 50px 0 50px 0;
 }

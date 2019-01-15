@@ -2,10 +2,30 @@
 
 body *{
     font-family: sans-serif;
+    color: #fff;
+}
+
+.img-svg{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.img-fill{
+    width: 100%;
+}
+
+.img-round{
+    width: 300px;
+    border-radius: 50%;
+    margin: 50px 0 50px 0;
+}
+
+.img-icon{
+    width: 50%;
 }
 
 @media screen and (max-width: 1199px) {
-    .responsive-title > h1,h4,p {
+    .responsive-title > h1,h4,h5 {
         display: inline-block;
     }
 
@@ -20,12 +40,48 @@ body *{
     .responsive-title > p {
         font-size: .75em;
     }
+
+    .anti-skew{
+        transform: skewY(-10deg);
+        padding: 50% 0 50% 0;
+    }
+
+    .anti-skew-2{
+        transform: skewY(-10deg);
+        padding: 10% 0 10% 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    .responsive-title > h1,h4,p {
+    .responsive-title > h1,h4,h5 {
         display: inline;
     }
+
+    .anti-skew{
+        transform: skewY(-10deg);
+        padding: 5% 0 5% 0;
+    }
+
+    .anti-skew-2{
+        transform: skewY(-10deg);
+        padding: 5% 0 5% 0;
+    }
+
+    .p-big{
+        font-size: 1.5em;
+    }
+}
+
+.anti-skew-img{
+    transform: skewY(-10deg);
+}
+
+.p-none{
+    padding: 0;
+}
+
+.p-padding{
+    padding: 30px;
 }
 
 .white-text{
@@ -36,7 +92,11 @@ body *{
     color: #05f;
 }
 
-.bold-text{
+.dark-text{
+    color: #222;
+}
+
+.bold-text {
     font-weight: bold;
 }
 
@@ -44,14 +104,68 @@ main{
 
 }
 
+.top-slant{
+    margin-top: -40%;
+}
+
+.bot-slant{
+    margin-bottom: -40%;
+}
+
+.top-slant-2{
+    margin-top: -12%;
+}
+
+.bot-slant-2{
+    margin-bottom: -12%;
+}
+
 #landing{
-    background: url(images/backgrounds/background.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(images/backgrounds/background.jpg) no-repeat center center fixed;
+    background-size: cover; 
     height: 100vh;
+    padding-bottom: 100px;
+    margin-bottom: -9%;
+}
+
+#about{
+    background-color: #05f;
+    transform: skewY(10deg);
+}
+
+#projects{
+    background-color: #fff;
+    transform: skewY(10deg);
+}
+
+#highlights{
+    background-color: #333;
+    transform: skewY(10deg);
+    padding-bottom: 30px;
+}
+
+.video{
+    height: 550px;
+}
+
+#skills{
+    background-color: #05f;
+    transform: skewY(10deg);
+}
+
+#software{
+    background-color: #fff;
+    transform: skewY(10deg);
+    padding: 5% 0 5% 0;
+}
+
+#contact{
+    background-color: #333;
+    transform: skewY(10deg);
 }
 
 footer{
     background-color: #232323;
     color: #fff;
-    padding: 50px 0 50px 0;
+    padding: 25px 0 25px 0;
 }
